@@ -8,4 +8,7 @@
     <string name="texto_consultoria">Consultoria</string>
     <string name="texto_processos">Processos</string>
     <string name="texto_acompanhamento">Aconpanhamento e projetos</string>
+    <string name="texto_NossosClientes">Nossos Clientes</string>
+    <string name="texto_sys">Empresa desenvolvimento de sistemas</string>
+    <string name="texto_rsm">Empresa de auditoria</string>
 </resources>
