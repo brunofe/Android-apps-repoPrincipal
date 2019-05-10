@@ -1,9 +1,10 @@
 package com.studio.atmempresaconsultoria;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ServicoActivity extends AppCompatActivity {
+public class ServicoActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

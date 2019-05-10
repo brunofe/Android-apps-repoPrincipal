@@ -4,4 +4,8 @@
     <string name="texto_padrao">
         wwwwwWWWWwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwWWWWwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwWWWWWWWWWWWwwwwwWWWWwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwWWWWwwwwwWWWWwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWwWwwWwWwWw
     </string>
+    <string name="servico_detalhes">Servicos</string>
+    <string name="texto_consultoria">Consultoria</string>
+    <string name="texto_processos">Processos</string>
+    <string name="texto_acompanhamento">Aconpanhamento e projetos</string>
 </resources>
