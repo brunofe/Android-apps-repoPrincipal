@@ -32,21 +32,21 @@ public class MainActivity extends Activity {
         botaoServico.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, EmpresaActivity.class));
+                startActivity(new Intent(MainActivity.this, ServicoActivity.class));
             }
         });
 
         botaoCliente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, EmpresaActivity.class));
+                startActivity(new Intent(MainActivity.this, ClienteActivity.class));
             }
         });
 
         botaoContato.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, EmpresaActivity.class));
+                startActivity(new Intent(MainActivity.this, Contatoctivity.class));
             }
         });
     }
