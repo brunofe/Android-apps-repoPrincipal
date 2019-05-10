@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
         botaoContato.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Contatoctivity.class));
+                startActivity(new Intent(MainActivity.this, ContatoActivity.class));
             }
         });
     }
