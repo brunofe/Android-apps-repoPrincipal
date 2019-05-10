@@ -11,4 +11,8 @@
     <string name="texto_NossosClientes">Nossos Clientes</string>
     <string name="texto_sys">Empresa desenvolvimento de sistemas</string>
     <string name="texto_rsm">Empresa de auditoria</string>
+    <string name="texto_contato">Contato</string>
+    <string name="texto_email">E-mail: consultoria@atm.com.br</string>
+    <string name="texto_telefone">Telefone: (11) 33333-2222</string>
+    <string name="texto_celular">Texto: (11) 99999-8888</string>
 </resources>
