@@ -1,0 +1,2 @@
+# CaraOuCoroaApp
+Cara ou Coroa
