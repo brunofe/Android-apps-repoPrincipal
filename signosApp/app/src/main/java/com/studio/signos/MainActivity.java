@@ -3,8 +3,11 @@ package com.studio.signos;
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -33,5 +36,13 @@ public class MainActivity extends Activity {
             signos
         );
         listaSignos.setAdapter( adaptador );
+
+        listaSignos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                int codigoPosicao = position;
+                Toast.makeText(getApplicationContext(), perfis[codigoPosicao], Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }
