@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tamanhoSeekbar">200dp</dimen>
+    <dimen name="disTopSeek">50dp</dimen>
+    <dimen name="disTopText">25dp</dimen>
+</resources>
