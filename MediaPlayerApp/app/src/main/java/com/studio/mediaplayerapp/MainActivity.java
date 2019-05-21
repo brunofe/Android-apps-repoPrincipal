@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
     }
 
     private void tocarMusica(){
-        if(mediaPlayer != null) {
+        if(mediaPlayer != null  ) {
             mediaPlayer.start();
             botaoTocar.setText("Pausar");
         }
@@ -42,8 +42,18 @@ public class MainActivity extends Activity {
 
     private void pausarMusica(){
         if(mediaPlayer != null) {
-            mediaPlayer.stop();
+            mediaPlayer.pause();
             botaoTocar.setText("Tocar");
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        if(mediaPlayer != null && mediaPlayer.isPlaying()){
+            mediaPlayer.stop();
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+        super.onDestroy();
     }
 }
