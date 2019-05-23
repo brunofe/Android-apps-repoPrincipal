@@ -22,17 +22,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/caoId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:src="@drawable/cao"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintEnd_toStartOf="@+id/gatoId"
+        app:layout_constraintTop_toTopOf="@+id/gatoId" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/gatoId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -44,7 +44,7 @@
         app:layout_constraintVertical_bias="0.086" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/leaoId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -62,7 +62,7 @@
         app:layout_constraintVertical_bias="0.322" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/macacoId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -80,17 +80,17 @@
         app:layout_constraintVertical_bias="0.317" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/ovelhaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:src="@drawable/ovelha"
-        app:layout_constraintEnd_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+        app:layout_constraintEnd_toStartOf="@+id/vacaId"
+        app:layout_constraintTop_toTopOf="@+id/vacaId" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/vacaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="224dp"
@@ -99,10 +99,10 @@
         android:layout_marginBottom="8dp"
         android:src="@drawable/vaca"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/gatoId"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/gatoId"
         app:layout_constraintVertical_bias="0.39" />
 
     <ImageView
