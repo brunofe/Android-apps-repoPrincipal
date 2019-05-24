@@ -51,9 +51,9 @@ public class MainActivity extends Activity {
         SharedPreferences sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, Context.MODE_PRIVATE);
         if( sharedPreferences.contains("nome")){
             String nomeUsuario = sharedPreferences.getString("nome", "usuário não definido");
-            textoExibicao.setText(nomeUsuario);
+            textoExibicao.setText("Olá, "+nomeUsuario);
         } else {
-            textoExibicao.setText("Olá, usuáio não definido.");
+         //   textoExibicao.setText("Olá, usuáio não definido.");
         }
     }
 }
