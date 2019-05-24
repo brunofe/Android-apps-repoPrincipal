@@ -1,0 +1,2 @@
+# CorPesonalizadaApp
+Shared Preferences app
