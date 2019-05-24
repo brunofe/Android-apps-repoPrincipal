@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CorPesonalizada</string>
+    <string name="button_salvar">Salvar</string>
 </resources>
