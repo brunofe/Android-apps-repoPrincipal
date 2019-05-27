@@ -1,0 +1,2 @@
+# anotacoesApp
+Armazenamento Android
