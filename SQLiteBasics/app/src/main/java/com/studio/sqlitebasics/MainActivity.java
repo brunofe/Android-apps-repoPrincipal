@@ -15,23 +15,44 @@ public class MainActivity extends AppCompatActivity {
 
         SQLiteDatabase bancoDados = openOrCreateDatabase("app", MODE_PRIVATE, null);
 
-        //tabela
-        bancoDados.execSQL("CREATE TABLE IF NOT EXISTS pessoas(nome VARCHAR, idade INT(3))");
+        //CRIANDO tabela SE NAO EXISTE
+        //bancoDados.execSQL("CREATE TABLE IF NOT EXISTS pessoas(nome VARCHAR, idade INT(3))");
+
+        //criando tabela com id INCREMENTAL..  1 bruno, 2 bruno,  3 eduardo, 4 janete ... etc
+        bancoDados.execSQL("CREATE TABLE IF NOT EXISTS pessoas(id INTEGER PRIMARY KEY AUTOINCREMENT,nome VARCHAR, idade INT(3))");
+        //deletando a tabela
+        //bancoDados.execSQL("drop table pessoas");
+
 
         //Inserir dados
-        bancoDados.execSQL("INSERT INTO pessoas (nome, idade) VALUES (\"Marcos\", 30)");
-        bancoDados.execSQL("INSERT INTO pessoas (nome, idade) VALUES (\"Ana\", 20)");
+        bancoDados.execSQL("INSERT INTO pessoas (nome, idade) VALUES (\"Carlos\", 43)");
+        bancoDados.execSQL("INSERT INTO pessoas (nome, idade) VALUES (\"Eduardo\", 40)");
+        bancoDados.execSQL("INSERT INTO pessoas (nome, idade) VALUES (\"Adriana\", 40)");
+        bancoDados.execSQL("INSERT INTO pessoas (nome, idade) VALUES (\"Rodrigo\", 40)");
+        bancoDados.execSQL("INSERT INTO pessoas (nome, idade) VALUES (\"marcelo\", 40)");
+        bancoDados.execSQL("INSERT INTO pessoas (nome, idade) VALUES (\"Eduardo\", 40)");
+        bancoDados.execSQL("INSERT INTO pessoas (nome, idade) VALUES (\"Eduardo\", 40)");
 
-        Cursor cursor = bancoDados.rawQuery("SELECT nome, idade FROM pessoas", null);
+        //modificar dados
+        //bancoDados.execSQL("UPDATE pessoas SET idade = 37 WHERE nome = \"Eduardo\"");
+
+        //deletar dados
+        //bancoDados.execSQL("DELETE FROM pessoas WHERE nome = \"Carlos\"");
+
+        //WHERE
+        //Cursor cursor = bancoDados.rawQuery("SELECT nome, idade FROM pessoas Where idade>30 AND nome = \"Eduardo\" ", null);
+        Cursor cursor = bancoDados.rawQuery("SELECT * FROM pessoas", null);
 
         int indiceColunaNome = cursor.getColumnIndex("nome");
-        int indiceColunaIdade = cursor.getColumnIndex("idade");;;
+        int indiceColunaIdade = cursor.getColumnIndex("idade");
+        int indiceColunaId = cursor.getColumnIndex("id");
 
         cursor.moveToFirst();
-
+        // colocar RESULTADO no logcat para visualizar
         while( cursor != null) {
             Log.i("RESULTADO - nome: ", cursor.getString(indiceColunaNome));
-            Log.i("RESULTADO - nome: ", cursor.getString(indiceColunaIdade));
+            Log.i("RESULTADO - idade: ", cursor.getString(indiceColunaIdade));
+            Log.i("RESULTADO - id: ", cursor.getString(indiceColunaId));
             cursor.moveToNext();
         }
 
