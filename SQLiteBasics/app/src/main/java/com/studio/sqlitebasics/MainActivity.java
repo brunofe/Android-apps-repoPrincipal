@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         //deletando a tabela
         //bancoDados.execSQL("drop table pessoas");
 
-
         //Inserir dados
         bancoDados.execSQL("INSERT INTO pessoas (nome, idade) VALUES (\"Carlos\", 43)");
         bancoDados.execSQL("INSERT INTO pessoas (nome, idade) VALUES (\"Eduardo\", 40)");
@@ -55,7 +54,5 @@ public class MainActivity extends AppCompatActivity {
             Log.i("RESULTADO - id: ", cursor.getString(indiceColunaId));
             cursor.moveToNext();
         }
-
-
     }
 }
