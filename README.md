@@ -16,7 +16,7 @@ repositorio principal dos Apps feitos no curso: [Desenvolvimento Android](https:
 7) [Cor Pesonalizada](CorPesonalizadaApp): Armazenar a cor preferencial de background do layout com SharedPreferences.  
     *OBS:para estudar threads fiz uma animação usando a escala de cores RGB(botao loop)*  
     
-8) [Minhas anotacoes](anotacoesApp): Armazenar dados em arquivo de texto utilizando BufferedReader,InputStream,  
+8) [Minhas anotacoes](anotacoesApp): Armazenar dados em arquivo de texto utilizando BufferedReader, InputStream,   
     OutputStreamWriter e InputStreamReader. Utilizar Toast.  
 
 9) [SQLiteBasics](SQLiteBasics): Utilizar algumas funcoes do SQLite:  
