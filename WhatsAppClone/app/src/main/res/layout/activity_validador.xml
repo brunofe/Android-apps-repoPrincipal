@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <ImageView
+        android:id="@+id/logoId"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textTitleValidadorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/titleValidador"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/defaultTitleTextSize" />
+
+    <TextView
+        android:id="@+id/textValidadorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitleValidadorId"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        android:text="@string/textValidador"
+
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/defaultTextSize" />
+
+    <EditText
+        android:id="@+id/entradaValidadorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textValidadorId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        android:ems="10"
+        android:hint="@string/hintValidador"
+        android:inputType="textPersonName"
+        android:shadowColor="@color/textColorPrimary"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/textColorPrimary"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="@dimen/defaultTextSize" />
+
+    <Button
+        android:id="@+id/buttonValidarId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entradaValidadorId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/buttonValidar"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/defaultTextButtonSize" />
+
+</RelativeLayout>
