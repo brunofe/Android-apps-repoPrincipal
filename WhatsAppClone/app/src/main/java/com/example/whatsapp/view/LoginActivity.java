@@ -7,9 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.whatsapp.R;
+import com.example.whatsapp.helper.Preferences;
 import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
 
+import java.util.HashMap;
 import java.util.Random;
 
 
@@ -56,6 +58,13 @@ public class LoginActivity extends AppCompatActivity {
                                 telefone.getText().toString();
 
 
+                //**precisa usar o presenter para formatar os dados antes de enviar para a view
+
+                //salvar dados para validaçao
+                Preferences preferences = new Preferences( LoginActivity.this );
+                preferences.salvarUsuarioPreferencias(nomeUsuario, telefone,);
+
+                HashMap<String, String> usuario = preferences.getDadosUsuario();
             }
         });
     }

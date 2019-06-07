@@ -7,6 +7,5 @@ public interface LoginActivityContract {
     }
 
     interface View {
-        void test();
     }
 }
