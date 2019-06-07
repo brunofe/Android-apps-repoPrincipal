@@ -49,21 +49,11 @@ public class LoginActivity extends AppCompatActivity {
         cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String nomeUsuario = nome.getText().toString();
                 String telefoneCompleto =
                                 codPais.getText().toString()+
                                 codArea.getText().toString()+
                                 telefone.getText().toString();
-
-                String telefoneSemFormatacao = telefoneCompleto.replace("+","");
-                telefoneSemFormatacao = telefoneCompleto.replace("-","");
-
-                //gerar token
-                Random randomico = new Random();
-                int numeroRandomico = randomico.nextInt( 9999 - 1000 ) + 1000;
-                String token = String.valueOf( numeroRandomico );
-
 
 
             }

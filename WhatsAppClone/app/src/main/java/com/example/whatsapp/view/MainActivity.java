@@ -2,16 +2,18 @@ package com.example.whatsapp.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.whatsapp.R;
+import com.example.whatsapp.interfaces.MainPresenterContract;
 import com.example.whatsapp.presenter.MainActivityPresenter;
 
-public class MainActivity extends AppCompatActivity implements MainActivityPresenter.View{
+public class MainActivity extends AppCompatActivity implements MainPresenterContract.View{
     MainActivityPresenter presenter;
     private Button buttonEnviar;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

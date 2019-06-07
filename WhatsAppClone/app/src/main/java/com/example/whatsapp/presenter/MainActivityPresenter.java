@@ -1,9 +1,9 @@
 package com.example.whatsapp.presenter;
 import com.example.whatsapp.interfaces.CallBackInserir;
-import com.example.whatsapp.interfaces.presenterContract;
+import com.example.whatsapp.interfaces.MainPresenterContract;
 import com.example.whatsapp.repository.FireBase;
 
-public class MainActivityPresenter implements presenterContract {
+public class MainActivityPresenter implements MainPresenterContract.Presenter, MainPresenterContract {
     private FireBase base;
     private View view;
 
@@ -24,9 +24,5 @@ public class MainActivityPresenter implements presenterContract {
                 view.showToast(msg);
             }
         });
-    }
-
-    public interface View {
-        void showToast(String msg);
     }
 }
