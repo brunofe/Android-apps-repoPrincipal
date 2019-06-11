@@ -13,9 +13,9 @@ import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
 
 import java.util.HashMap;
-import java.util.Random;
 
-public class ValidadorActivity extends AppCompatActivity {
+//os arquivos dessa tela foi excluida(DELETADA) na aula 183 bem como o seu xml
+public class OldValidadorActivity extends AppCompatActivity {
 
     private EditText codigoValidacao;
     private Button validar;
@@ -23,7 +23,7 @@ public class ValidadorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_validador);
+        setContentView(R.layout.activity_oldValidador);
 
         codigoValidacao = findViewById(R.id.entradaValidadorId);
         validar         = findViewById(R.id.buttonValidarId);
@@ -37,16 +37,16 @@ public class ValidadorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Recuperar dados das preferencias do usuário
-                Preferences preferences = new Preferences( ValidadorActivity.this);
+                Preferences preferences = new Preferences( OldValidadorActivity.this);
                 HashMap<String, String> usuario = preferences.getDadosUsuario();
 
                 String tokenGerado = usuario.get("token");
                 String tokenDigitado = codigoValidacao.getText().toString();
 
                 if(tokenDigitado.equals(tokenGerado)) {
-                    Toast.makeText(ValidadorActivity.this, "Token VALIDADO", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(OldValidadorActivity.this, "Token VALIDADO", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(ValidadorActivity.this,"Token nao validado", Toast.LENGTH_SHORT);
+                    Toast.makeText(OldValidadorActivity.this,"Token nao validado", Toast.LENGTH_SHORT);
                 }
             }
         });

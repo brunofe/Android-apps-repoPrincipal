@@ -1,6 +1,6 @@
 package com.example.whatsapp.interfaces;
 
-public interface LoginActivityContract {
+public interface OldLoginActivityContract {
     interface Presenter{
         String formatString(String string);
         String generateToken();

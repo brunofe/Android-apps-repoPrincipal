@@ -2,16 +2,16 @@ package com.example.whatsapp.presenter;
 
 import android.telephony.SmsManager;
 
-import com.example.whatsapp.interfaces.LoginActivityContract;
+import com.example.whatsapp.interfaces.OldLoginActivityContract;
 import com.example.whatsapp.repository.FireBase;
 
 import java.util.Random;
 
-public class LoginActivityPresenter implements LoginActivityContract.Presenter,LoginActivityContract {
+public class OldOldLoginActivityPresenter implements OldLoginActivityContract.Presenter, OldLoginActivityContract {
     private FireBase base;
     private View view;
 
-    public LoginActivityPresenter(View view) {
+    public OldOldLoginActivityPresenter(View view) {
         this.base = new FireBase();
         this.view = view;
     }
