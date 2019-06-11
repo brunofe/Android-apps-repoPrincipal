@@ -1,9 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.LoginActivity">
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal|center_vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/logoId"
+        android:layout_width="@dimen/larguraLogo"
+        android:layout_height="@dimen/logoAltura"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/emailEditTextId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoId"
+        android:layout_marginTop="@dimen/hightDefaultMarginTop"
+        android:ems="10"
+        android:hint="Digite seu email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/senhaEditTextId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEditTextId"
+        android:layout_marginTop="@dimen/hightDefaultMarginTop"
+        android:ems="10"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonLogarId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/senhaEditTextId"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/bt_logar"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/defaultTextButtonSize" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLogarId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/defaultMarginTop"
+        android:text="Não tem conta? cadastre-se"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp" />
+
+</RelativeLayout>

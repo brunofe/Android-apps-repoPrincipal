@@ -22,7 +22,6 @@ import com.github.rtoshiro.util.format.text.MaskTextWatcher;
 
 import java.util.HashMap;
 
-
 public class OldLoginActivity extends AppCompatActivity {
 
     private EditText nome;
@@ -57,7 +56,6 @@ public class OldLoginActivity extends AppCompatActivity {
         MaskTextWatcher maskTelefone = new MaskTextWatcher(telefone, simpleMaskFormatterTelefone);
         MaskTextWatcher maskCodArea = new MaskTextWatcher(codArea,simpleMaskFormatterArea);
         MaskTextWatcher maskCodPais = new MaskTextWatcher(codPais,simpleMaskFormatterPais);
-
 
         codPais.addTextChangedListener( maskCodPais );
         codArea.addTextChangedListener( maskCodArea);
@@ -98,8 +96,6 @@ public class OldLoginActivity extends AppCompatActivity {
                 HashMap<String, String> usuario = preferences.getDadosUsuario();
 
                 Log.i("TOKEN","T:"+usuario.get("token")+" NOME:"+usuario.get("nome")+" FONE:"+ usuario.get("telefone"));
-
-
             }
         });
     }

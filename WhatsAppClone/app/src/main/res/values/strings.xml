@@ -5,4 +5,5 @@
     <string name="textValidador">Voce recebeu um sms paa validação do seu numero, digite o codigo de validação abaixo:</string>
     <string name="hintValidador">digite o codigo</string>
     <string name="buttonValidar">Validar</string>
+    <string name="bt_logar">logar</string>
 </resources>

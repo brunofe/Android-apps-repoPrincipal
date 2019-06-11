@@ -3,6 +3,7 @@
     <dimen name="larguraLogo">200dp</dimen>
     <dimen name="logoAltura">163dp</dimen>
     <dimen name="defaultMarginTop">10dp</dimen>
+    <dimen name="hightDefaultMarginTop">15dp</dimen>
     <dimen name="defaultTitleTextSize">25sp</dimen>
     <dimen name="defaultTextSize">20sp</dimen>
     <dimen name="defaultTextButtonSize">15sp</dimen>
