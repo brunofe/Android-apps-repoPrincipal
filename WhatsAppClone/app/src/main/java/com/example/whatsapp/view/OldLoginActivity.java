@@ -37,7 +37,7 @@ public class OldLoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_oldLogin);
+        setContentView(R.layout.activity_oldlogin);
 
         Permissions.validaPermissoes(1,this,permissoesNecessarias);
 

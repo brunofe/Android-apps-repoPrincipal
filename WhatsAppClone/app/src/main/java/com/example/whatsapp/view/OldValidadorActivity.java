@@ -23,7 +23,7 @@ public class OldValidadorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_oldValidador);
+        setContentView(R.layout.activity_oldvalidador);
 
         codigoValidacao = findViewById(R.id.entradaValidadorId);
         validar         = findViewById(R.id.buttonValidarId);

@@ -55,6 +55,7 @@
         android:layout_below="@+id/buttonLogarId"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/defaultMarginTop"
+        android:onClick="abrirCadastroUsuario"
         android:text="Não tem conta? cadastre-se"
         android:textColor="@color/textColorPrimary"
         android:textSize="18sp" />
