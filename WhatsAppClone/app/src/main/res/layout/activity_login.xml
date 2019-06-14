@@ -43,10 +43,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/senhaEditTextId"
         android:layout_marginTop="@dimen/defaultMarginTop"
-        android:background="@color/colorPrimaryDark"
         android:text="@string/bt_logar"
-        android:textColor="@color/textColorPrimary"
-        android:textSize="@dimen/defaultTextButtonSize" />
+        android:textSize="@dimen/defaultTextButtonSize"
+        android:theme="@style/botaoPadrao"
+        />
 
     <TextView
         android:id="@+id/textView"

@@ -86,9 +86,13 @@
         android:layout_marginRight="20dp"
 
         android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimaryDark"
+
         android:text="@string/botao_cadastrar"
-        android:textColor="@color/textColorPrimary"
+
+
+        android:theme="@style/botaoPadrao"
+
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

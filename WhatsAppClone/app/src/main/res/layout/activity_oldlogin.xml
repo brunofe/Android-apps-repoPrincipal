@@ -74,7 +74,7 @@
         android:layout_marginTop="20dp"
         android:background="@color/colorPrimaryDark"
 
-        android:text="@string/botao_cadastrar"
+
         android:textColor="@color/textColorPrimary"
         android:textSize="@dimen/defaultTextButtonSize" />
 
