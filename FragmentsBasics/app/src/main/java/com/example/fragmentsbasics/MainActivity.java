@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
                     LoginFragment loginFragment = new LoginFragment();
-                    CadastroFragment cadastroFragment=new CadastroFragment();;
+                    CadastroFragment cadastroFragment=new CadastroFragment();
 
                     if(status){
                          if(cadastroFragment.isAdded()){
