@@ -41,10 +41,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/linearLyout_id">
-        <fragment
+        <!-- <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            class="com.example.fragmentsbasics.LoginFragment"/>
+            class="com.example.fragmentsbasics.LoginFragment"/> -->
 
     </RelativeLayout>
 </RelativeLayout>

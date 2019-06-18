@@ -18,7 +18,6 @@ public class LoginFragment extends Fragment {
 
     private TextView texto;
 
-    //6:33 minutos
     public LoginFragment() {
         // Required empty public constructor
     }

@@ -23,14 +23,22 @@ public class MainActivity extends AppCompatActivity {
 
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                     if(status){
-                         LoginFragment loginFragment = new LoginFragment();
+
+                    LoginFragment loginFragment = new LoginFragment();
+                    CadastroFragment cadastroFragment=new CadastroFragment();;
+
+                    if(status){
+                         if(cadastroFragment.isAdded()){
+                             fragmentTransaction.hide(cadastroFragment);
+                         }
                          fragmentTransaction.add(R.id.rl_container_fragmento, loginFragment);
                          fragmentTransaction.commit();
                          botaoLogar.setText("Cadastre-se");
                          status=false;
                       }else {
-                         CadastroFragment cadastroFragment = new CadastroFragment();
+                        if(loginFragment.isAdded()){
+                            fragmentTransaction.hide(loginFragment);
+                        }
                          fragmentTransaction.add(R.id.rl_container_fragmento, cadastroFragment);
                          fragmentTransaction.commit();
                          botaoLogar.setText("Logar");
