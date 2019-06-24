@@ -17,30 +17,35 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         botaoLogar = findViewById(R.id.bt_logar);
+
+
         botaoLogar.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                    FragmentManager fragmentManager = getSupportFragmentManager();
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    FragmentManager fm= getSupportFragmentManager();
+                    FragmentTransaction ft;
 
                     LoginFragment loginFragment = new LoginFragment();
                     CadastroFragment cadastroFragment=new CadastroFragment();
 
                     if(status){
-                         if(cadastroFragment.isAdded()){
-                             fragmentTransaction.hide(cadastroFragment);
-                         }
-                         fragmentTransaction.add(R.id.rl_container_fragmento, loginFragment);
-                         fragmentTransaction.commit();
+                        ft = fm.beginTransaction();
+                        if(cadastroFragment.isAdded()){
+                            ft.replace(R.id.rl_container_fragmento,loginFragment);
+                        } else {
+                            ft.add(R.id.rl_container_fragmento, loginFragment);
+                        }
+                         ft.addToBackStack(null);
+                         ft.commit();
                          botaoLogar.setText("Cadastre-se");
                          status=false;
+
                       }else {
-                        if(loginFragment.isAdded()){
-                            fragmentTransaction.hide(loginFragment);
-                        }
-                         fragmentTransaction.add(R.id.rl_container_fragmento, cadastroFragment);
-                         fragmentTransaction.commit();
+                         ft = fm.beginTransaction();
+                         ft.replace(R.id.rl_container_fragmento,cadastroFragment);
+                         ft.addToBackStack(null);
+                         ft.commit();
                          botaoLogar.setText("Logar");
                          status=true;
                      }
