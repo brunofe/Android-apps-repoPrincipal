@@ -25,7 +25,7 @@
         android:id="@+id/linearLyout_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#CCCCCC"
+        android:background="@android:color/black"
         android:orientation="horizontal">
 
         <Button

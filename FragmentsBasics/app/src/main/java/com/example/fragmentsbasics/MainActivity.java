@@ -40,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
                          ft.commit();
                          botaoLogar.setText("Cadastre-se");
                          status=false;
-
-                      }else {
+                      } else {
                          ft = fm.beginTransaction();
                          ft.replace(R.id.rl_container_fragmento,cadastroFragment);
                          ft.addToBackStack(null);
