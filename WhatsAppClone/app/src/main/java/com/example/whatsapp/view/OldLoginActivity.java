@@ -77,7 +77,7 @@ public class OldLoginActivity extends AppCompatActivity {
                 //salvar dados para validaçao
                 String token = presenter.generateToken();
                 Preferences preferences = new Preferences( OldLoginActivity.this );
-                preferences.salvarUsuarioPreferencias(nomeUsuario, telefoneSemFormatacao, token);
+               // preferences.salvarUsuarioPreferencias(nomeUsuario, telefoneSemFormatacao, token);
 
 
                 //envio do SMS
@@ -93,9 +93,9 @@ public class OldLoginActivity extends AppCompatActivity {
                     Toast.makeText(OldLoginActivity.this, "Problema ao enviar SMS, tente novamente!!", Toast.LENGTH_SHORT).show();
                 }
 
-                HashMap<String, String> usuario = preferences.getDadosUsuario();
+               // HashMap<String, String> usuario = preferences.getDadosUsuario();
 
-                Log.i("TOKEN","T:"+usuario.get("token")+" NOME:"+usuario.get("nome")+" FONE:"+ usuario.get("telefone"));
+               // Log.i("TOKEN","T:"+usuario.get("token")+" NOME:"+usuario.get("nome")+" FONE:"+ usuario.get("telefone"));
             }
         });
     }

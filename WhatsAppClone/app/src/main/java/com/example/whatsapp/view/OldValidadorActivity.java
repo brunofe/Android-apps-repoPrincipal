@@ -38,16 +38,16 @@ public class OldValidadorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Recuperar dados das preferencias do usuário
                 Preferences preferences = new Preferences( OldValidadorActivity.this);
-                HashMap<String, String> usuario = preferences.getDadosUsuario();
+               // HashMap<String, String> usuario = preferences.getDadosUsuario();
 
-                String tokenGerado = usuario.get("token");
+              //  String tokenGerado = usuario.get("token");
                 String tokenDigitado = codigoValidacao.getText().toString();
 
-                if(tokenDigitado.equals(tokenGerado)) {
-                    Toast.makeText(OldValidadorActivity.this, "Token VALIDADO", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(OldValidadorActivity.this,"Token nao validado", Toast.LENGTH_SHORT);
-                }
+               // if(tokenDigitado.equals(tokenGerado)) {
+               //     Toast.makeText(OldValidadorActivity.this, "Token VALIDADO", Toast.LENGTH_SHORT).show();
+               // } else {
+                //    Toast.makeText(OldValidadorActivity.this,"Token nao validado", Toast.LENGTH_SHORT);
+               // }
             }
         });
     }

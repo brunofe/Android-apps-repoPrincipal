@@ -13,7 +13,7 @@
     <com.example.whatsapp.helper.SlidingTabLayout
         android:id="@+id/stl_tabs"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:background="@color/colorPrimary" />
 
     <android.support.v4.view.ViewPager

@@ -1,5 +1,6 @@
 package com.example.whatsapp.view;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +12,8 @@ import android.widget.Toast;
 
 import com.example.whatsapp.R;
 import com.example.whatsapp.config.ConfiguracaoFirebase;
+import com.example.whatsapp.helper.Base64Custom;
+import com.example.whatsapp.helper.Preferences;
 import com.example.whatsapp.model.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -67,10 +70,17 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                     Toast.makeText(CadastroUsuarioActivity.this,"Sucesso ao cadastrar usuário", Toast.LENGTH_SHORT).show();
 
                     FirebaseUser usuarioFirebase= task.getResult().getUser();
-                    usuario.setId(usuarioFirebase.getUid());
+                    //usuarioFirebase.getUid()
+
+                    String identificadorUsuario = Base64Custom.codificarBase64(usuario.getEmail());
+                    usuario.setId(identificadorUsuario);
                     usuario.salvar();
-                    autenticacao.signOut();
-                    finish();
+
+                    Preferences preferencias = new Preferences(CadastroUsuarioActivity.this);
+                    preferencias.salvarDados(identificadorUsuario);
+
+                    abrirLoginUsuario();
+
                 }else {
                     String erroExcecao="";
 
@@ -94,5 +104,11 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void abrirLoginUsuario(){
+        Intent intent = new Intent(CadastroUsuarioActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
