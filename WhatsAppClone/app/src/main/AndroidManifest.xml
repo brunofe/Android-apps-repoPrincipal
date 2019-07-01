@@ -14,17 +14,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".view.CadastroUsuarioActivity"></activity>
-        <activity android:name=".view.OldValidadorActivity"></activity>
-        <activity android:name=".view.OldLoginActivity" />
-        <activity android:name=".view.MainActivity"/>
+        <activity android:name=".view.ConversaActivity" android:parentActivityName=".view.MainActivity"></activity>
 
+
+        <activity android:name=".view.CadastroUsuarioActivity" />
+        <activity android:name=".view.OldValidadorActivity" />
+        <activity android:name=".view.OldLoginActivity" />
+        <activity android:name=".view.MainActivity" />
         <activity android:name=".view.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
+
 </manifest>

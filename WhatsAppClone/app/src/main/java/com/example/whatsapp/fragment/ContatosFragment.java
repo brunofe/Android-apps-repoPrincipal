@@ -1,5 +1,6 @@
 package com.example.whatsapp.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -7,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -15,6 +17,7 @@ import com.example.whatsapp.R;
 import com.example.whatsapp.config.ConfiguracaoFirebase;
 import com.example.whatsapp.helper.Preferences;
 import com.example.whatsapp.model.Contato;
+import com.example.whatsapp.view.ConversaActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -99,6 +102,23 @@ public class ContatosFragment extends Fragment {
 
             }
         };
+
+        //precisa adicionar o evento de click da listView
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getActivity(), ConversaActivity.class);
+
+                //recupera dados a serem passados
+                Contato contato = contatos.get(position);
+
+                //enviando dados para conversa acativity
+                intent.putExtra("nome", contato.getNome());
+                intent.putExtra("email", contato.getEmail());
+
+                startActivity(intent);
+            }
+        });
 
         return view;
     }
