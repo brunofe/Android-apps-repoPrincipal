@@ -23,6 +23,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 
 
 public class CadastroUsuarioActivity extends AppCompatActivity {
@@ -34,6 +35,7 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
     private Usuario usuario;
 
     private FirebaseAuth autenticacao;
+    private DatabaseReference firebase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,7 +79,7 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                     usuario.salvar();
 
                     Preferences preferencias = new Preferences(CadastroUsuarioActivity.this);
-                    preferencias.salvarDados(identificadorUsuario);
+                    preferencias.salvarDados(identificadorUsuario, usuario.getNome());
 
                     abrirLoginUsuario();
 
