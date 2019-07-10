@@ -10,6 +10,8 @@ public class FlappyBird extends ApplicationAdapter {
 	private SpriteBatch batch;
 	private Texture[] passaros;
 	private Texture fundo;
+	private Texture canoBaixo;
+	private Texture canoTopo;
 
 	//Atributos de configuração
 	private int laguraDispositivo;
@@ -18,6 +20,9 @@ public class FlappyBird extends ApplicationAdapter {
 	private float variacao=0;
 	private float velocidadeQueda=0;
 	private float posicaoInicialVertical;
+	private float posicaoMovimentoCanoHorizontal;
+	private float espacoEntreCanos;
+
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
@@ -27,15 +32,18 @@ public class FlappyBird extends ApplicationAdapter {
         passaros[2] = new Texture("passaro3.png");
 
 		fundo = new Texture("fundo.png");
+		canoBaixo = new Texture("cano_baixo.png");
+		canoTopo = new Texture("cano_topo.png");
 
 		laguraDispositivo= Gdx.graphics.getWidth();
 		alturaDispositivo=Gdx.graphics.getHeight();
 		posicaoInicialVertical=alturaDispositivo/2;
+		posicaoMovimentoCanoHorizontal = laguraDispositivo-100;
+		espacoEntreCanos = 200;
 	}
 
 	@Override
 	public void render () {
-
 	    variacao += Gdx.graphics.getDeltaTime()*5;
 	    Gdx.app.log("Variacao","Variacao"+Gdx.graphics.getDeltaTime());
 		velocidadeQueda++;
@@ -44,13 +52,23 @@ public class FlappyBird extends ApplicationAdapter {
 	        variacao = 0;
         }
 
-	    if(posicaoInicialVertical>0){
+	    if(Gdx.input.justTouched()) {
+	    	Gdx.app.log("Toque", "Toque na tela");
+
+	    	//posicaoInicialVertical =posicaoInicialVertical - velocidadeQueda
+			//5
+	    	velocidadeQueda = -20;
+		}
+
+	    if(posicaoInicialVertical>0 || velocidadeQueda < 0){
 			posicaoInicialVertical -= velocidadeQueda;
 		}
 
 		batch.begin();
 
 		batch.draw(fundo, 0,0, laguraDispositivo, alturaDispositivo);
+		batch.draw(canoTopo, posicaoMovimentoCanoHorizontal, alturaDispositivo/2 + espacoEntreCanos/2);
+		batch.draw(canoBaixo, posicaoMovimentoCanoHorizontal, alturaDispositivo/2 - canoBaixo.getHeight() - espacoEntreCanos/2);
 		batch.draw(passaros[(int)variacao], 30, posicaoInicialVertical);
 
 		batch.end();
@@ -71,6 +89,5 @@ public class FlappyBird extends ApplicationAdapter {
         passaros[1].dispose();
         passaros[2].dispose();
 		fundo.dispose();
-
 	}
 }
