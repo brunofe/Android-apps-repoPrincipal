@@ -1,0 +1,169 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:10:1-40:12
+INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:10:1-40:12
+INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:10:1-40:12
+INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:10:1-40:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/23c300f78086aa2d6dca14d9f2aa1816/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/7909d644d90f426e6c927190ab37234e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/efd84e67e760f522bf4b27c8535e6f33/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/900c04b361dc59f10a382f40509a4dcb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/4f748560b29da61dc4ca16d99419cfbb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/a36d503a8c9fd933aac2b4d6ccdc92fb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/a07706080d310bba542c2899708df653/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/67009f89ecec68709b0997c07e60fc5b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/288cd7772a7825aadc282c663bb3c406/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/1db13b24414361363618110857c7906a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/5474e9770df4ed2c09b21e838b9538ce/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/ad6f4786f348095d8c8fabe3a39d3c99/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/d233b9b228f854a0dc98844dad8a1570/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/2bdb1aba5a9400bfe01ba2ba54be6912/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/9392ac3bddd557ef329fa910ae817147/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/c11e63f87590f5569d40a622ba24cc71/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/3a00f9ba2491320e2149e53330508703/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/ca2f5362c3ba7f09c6179505571eb7f8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/5c331e0cfdf534eb4421fa61e7975d41/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/e3b54271f9d6fedaeebf66e0a1261a68/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/14106420826333919562f9be94c7056d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/e773b854734ed1897fb678bbc8fff974/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/851073a9e218735fd3e4b6865743bb27/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/818da245421579a69b501ad576812a55/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/3259f1e8698bcc4eb447d753d743dbca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/5ff34b294df63f55fdd2f9fc60f0653c/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:10:1-40:12
+INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:10:1-40:12
+INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:10:1-40:12
+	package
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:11:5-32
+		INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+		INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:10:1-40:12
+		INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:10:1-40:12
+		INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:10:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:13:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:14:22-76
+application
+ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:16:5-38:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/9392ac3bddd557ef329fa910ae817147/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/9392ac3bddd557ef329fa910ae817147/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/c11e63f87590f5569d40a622ba24cc71/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/c11e63f87590f5569d40a622ba24cc71/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/9392ac3bddd557ef329fa910ae817147/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:20:9-41
+	android:icon
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:19:9-43
+	android:allowBackup
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:18:9-35
+	android:theme
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:21:9-40
+	android:name
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:17:9-43
+meta-data#com.parse.APPLICATION_ID
+ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:22:9-24:52
+	android:value
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:24:13-49
+	android:name
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:23:13-52
+meta-data#com.parse.CLIENT_KEY
+ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:25:9-27:56
+	android:value
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:27:13-53
+	android:name
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:26:13-48
+activity#com.parse.starter.MainActivity
+ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:29:9-37:20
+	android:label
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:31:13-45
+	android:name
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:30:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:32:13-36:29
+action#android.intent.action.MAIN
+ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:35:27-74
+uses-sdk
+INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/23c300f78086aa2d6dca14d9f2aa1816/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/23c300f78086aa2d6dca14d9f2aa1816/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/7909d644d90f426e6c927190ab37234e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/7909d644d90f426e6c927190ab37234e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/efd84e67e760f522bf4b27c8535e6f33/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/efd84e67e760f522bf4b27c8535e6f33/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/900c04b361dc59f10a382f40509a4dcb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/900c04b361dc59f10a382f40509a4dcb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/4f748560b29da61dc4ca16d99419cfbb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/4f748560b29da61dc4ca16d99419cfbb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/a36d503a8c9fd933aac2b4d6ccdc92fb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/a36d503a8c9fd933aac2b4d6ccdc92fb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/a07706080d310bba542c2899708df653/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/a07706080d310bba542c2899708df653/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/67009f89ecec68709b0997c07e60fc5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/67009f89ecec68709b0997c07e60fc5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/288cd7772a7825aadc282c663bb3c406/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/288cd7772a7825aadc282c663bb3c406/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/1db13b24414361363618110857c7906a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/1db13b24414361363618110857c7906a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/5474e9770df4ed2c09b21e838b9538ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/5474e9770df4ed2c09b21e838b9538ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/ad6f4786f348095d8c8fabe3a39d3c99/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/ad6f4786f348095d8c8fabe3a39d3c99/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/d233b9b228f854a0dc98844dad8a1570/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/d233b9b228f854a0dc98844dad8a1570/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/2bdb1aba5a9400bfe01ba2ba54be6912/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/2bdb1aba5a9400bfe01ba2ba54be6912/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/9392ac3bddd557ef329fa910ae817147/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/9392ac3bddd557ef329fa910ae817147/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/c11e63f87590f5569d40a622ba24cc71/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/c11e63f87590f5569d40a622ba24cc71/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/3a00f9ba2491320e2149e53330508703/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/3a00f9ba2491320e2149e53330508703/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/ca2f5362c3ba7f09c6179505571eb7f8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/ca2f5362c3ba7f09c6179505571eb7f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/5c331e0cfdf534eb4421fa61e7975d41/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/5c331e0cfdf534eb4421fa61e7975d41/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/e3b54271f9d6fedaeebf66e0a1261a68/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/e3b54271f9d6fedaeebf66e0a1261a68/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/14106420826333919562f9be94c7056d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/14106420826333919562f9be94c7056d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/e773b854734ed1897fb678bbc8fff974/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/e773b854734ed1897fb678bbc8fff974/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/851073a9e218735fd3e4b6865743bb27/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/851073a9e218735fd3e4b6865743bb27/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/818da245421579a69b501ad576812a55/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/818da245421579a69b501ad576812a55/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/3259f1e8698bcc4eb447d753d743dbca/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/3259f1e8698bcc4eb447d753d743dbca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/5ff34b294df63f55fdd2f9fc60f0653c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/brunoferraresi/.gradle/caches/transforms-2/files-2.1/5ff34b294df63f55fdd2f9fc60f0653c/AndroidManifest.xml:20:5-44
+INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+		INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+		ADDED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
+		INJECTED from /Users/brunoferraresi/Desktop/Arquivos importantes/aulas/Apps-android/Android-apps-repoPrincipal/InstagranHeroku/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
