@@ -94,11 +94,7 @@ public class MainActivity extends AppCompatActivity {
               }else{//Erro ao listar
                   Log.i("ListarDados", "Erro ao Listar os objetos - " + e.getMessage() );
               }
-
           }
       });
-
-
   }
-
 }
