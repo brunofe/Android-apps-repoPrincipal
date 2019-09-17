@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         dialog.show();
-
     }
 
     public void showDialogSecond(Activity activity, String msg){

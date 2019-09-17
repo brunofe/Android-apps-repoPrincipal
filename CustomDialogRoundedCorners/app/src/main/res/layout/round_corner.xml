@@ -1,5 +1,5 @@
 <!--
-O arquivo abaixo é a estrutura básica do diálogo personalizado.
+O arquivo abaixo é a estrutura básica da Dialog personalizada.
 Você pode adicionar qualquer widget de interface do usuário, como TextView, Button, ImageView etc. neste arquivo.
 Tomei principalmente One ImageView, dois botões e um Textview.
 O elemento raiz deste arquivo é um RelativeLayout. Eu dei um valor de opacidade de cor preta 67 como o plano de fundo deste relativoLayout.
@@ -11,8 +11,7 @@ Isso fará com que o fundo transparente de nosso diálogo.
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@color/colorTransparent"
-    android:orientation="vertical">
+    android:background="@color/colorTransparent">
 
     <LinearLayout
         android:layout_width="match_parent"
