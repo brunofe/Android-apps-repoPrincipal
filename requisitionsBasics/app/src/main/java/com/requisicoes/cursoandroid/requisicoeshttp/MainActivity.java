@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -88,6 +91,56 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String resultado) {
             super.onPostExecute(resultado);
+
+
+
+
+            /*** Processamento JSON ***/
+            String logradouro = null;
+            String cep = null;
+            String complemento = null;
+            String bairro = null;
+            String localidade = null;
+            String uf = null;
+
+            try {
+                JSONObject jsonObject = new JSONObject(resultado);
+                logradouro = jsonObject.getString("logradouro");
+                cep = jsonObject.getString("cep");
+                complemento = jsonObject.getString("complemento");
+                bairro = jsonObject.getString("bairro");
+                localidade = jsonObject.getString("localidade");
+                uf = jsonObject.getString("uf");
+
+
+
+                /*
+                    se tiver um outro item a recuperar dentro de outro item exemplo:
+                    "BRL" : {"15m" : 1093.06, "last" : 1093.06, "buy" : 1092.77, "sell" : 1093.06,  "symbol" : "R$"},
+
+                     String objetoValor = null;
+                     String valorMoeda = null;
+                     String simbolo = null;
+
+                     JSONObject jsonObject = new JSONObject(resultado);
+                     objetoValor = jsonObject.getString( "BLR" );
+
+                      embaixo é criado um novo objet e com ele é possivel acessar o last e symbol
+                     JSONObject jsonObjectReal = new JSONObject( objetoValor );
+                     valorMoeda = jsonObjectReal.getString( "last" );
+                     simbolo = jsonObjectReal.getString( "symbol" );
+
+
+                 */
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            /*** Processamento JSON ***/
+
+
+
+
             textoResultado.setText( resultado );
         }
     }
