@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30f0055a-caa9-4115-a4fe-15e9d871cc02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/requisicoes/cursoandroid/requisicoeshttp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/requisicoes/cursoandroid/requisicoeshttp/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tarefasAssincronas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tarefasAssincronas/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +14,7 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="52007de4c01d5485" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Galaxy_J5_Pro_API_27" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -29,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/requisicoes/cursoandroid/requisicoeshttp/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="129" column="21" selection-start-line="129" selection-start-column="21" selection-end-line="129" selection-end-column="21" />
+            <state relative-caret-position="312">
+              <caret line="127" column="97" selection-start-line="127" selection-start-column="97" selection-end-line="127" selection-end-column="97" />
               <folding>
                 <element signature="e#980#1363#0" expanded="true" />
                 <element signature="e#1362#1363#0" expanded="true" />
@@ -252,8 +250,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/requisicoes/cursoandroid/requisicoeshttp/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="129" column="21" selection-start-line="129" selection-start-column="21" selection-end-line="129" selection-end-column="21" />
+        <state relative-caret-position="312">
+          <caret line="127" column="97" selection-start-line="127" selection-start-column="97" selection-end-line="127" selection-end-column="97" />
           <folding>
             <element signature="e#980#1363#0" expanded="true" />
             <element signature="e#1362#1363#0" expanded="true" />
