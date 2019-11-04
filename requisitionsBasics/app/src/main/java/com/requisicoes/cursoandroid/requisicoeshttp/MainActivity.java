@@ -3,9 +3,16 @@ package com.requisicoes.cursoandroid.requisicoeshttp;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.requisicoes.cursoandroid.requisicoeshttp.api.CEPService;
+import com.requisicoes.cursoandroid.requisicoeshttp.api.DataService;
+import com.requisicoes.cursoandroid.requisicoeshttp.model.CEP;
+import com.requisicoes.cursoandroid.requisicoeshttp.model.Foto;
+import com.requisicoes.cursoandroid.requisicoeshttp.model.Postagem;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -17,11 +24,22 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button botaoRecuperar;
     private TextView textoResultado;
+    private Retrofit retrofit;
+    //private List<Foto> listaFotos = new ArrayList<>();
+    private List<Postagem> listaPostagens = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,17 +49,82 @@ public class MainActivity extends AppCompatActivity {
         botaoRecuperar = findViewById(R.id.buttonRecuperar);
         textoResultado = findViewById(R.id.textResultado);
 
+        retrofit = new Retrofit.Builder()
+                //aqui tem o URL base e no model tem o resto da url
+                .baseUrl("https://jsonplaceholder.typicode.com")
+                //.baseUrl("https://viacep.com.br/ws/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
         botaoRecuperar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //recuperarCEPRetrofit();
+
+                recuperarListaRetrofit();
+
+                /*
                 MyTask task = new MyTask();
                 String urlApi = "https://blockchain.info/ticker";
                 String cep = "01310100";
                 String urlCep = "https://viacep.com.br/ws/" + cep + "/json/";
                 task.execute(urlCep);
+                 */
             }
         });
 
+    }
+
+    private void recuperarListaRetrofit() {
+        DataService service = retrofit.create(DataService.class);
+        //Call<List<Foto>> call = service.recuperarFotos();
+        Call<List<Postagem>> call = service.recuperarPostagens();
+
+        call.enqueue(new Callback<List<Postagem>>() {
+            @Override
+            public void onResponse(Call<List<Postagem>> call, Response<List<Postagem>> response) {
+                if(response.isSuccessful()) {
+                    listaPostagens = response.body();
+
+                    for(int i=0; i<listaPostagens.size(); i++){
+                        Postagem postagem = listaPostagens.get(i);
+                        Log.d("resultado","resutado:"+ postagem.getId() + " / " + postagem.getTitle());
+                    }
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Postagem>> call, Throwable t) {
+
+            }
+        });
+    }
+
+    private void recuperarCEPRetrofit(){
+
+        //ao acessar recuperarCEP() tem-se a chamada que o retrofit vai fazer
+        CEPService cepService = retrofit.create(CEPService.class);
+        Call<CEP> call = cepService.recuperarCEP("01310100");
+
+        //ao usar o metodo enqueue é criada uma tarefa assincrona com facilidade
+        //, automaticamente é criada uma tarefa assincrona dentro de uma thread para
+        //fazer o download das informações
+        call.enqueue(new Callback<CEP>() {
+            @Override
+            public void onResponse(Call<CEP> call, Response<CEP> response) {
+                    if(response.isSuccessful()){
+                        CEP cep = response.body();
+                        textoResultado.setText(cep.getLogradouro()+" / "+cep.getBairro());
+                    }
+            }
+
+            @Override
+            public void onFailure(Call<CEP> call, Throwable t) {
+
+            }
+        });
     }
 
     class MyTask extends AsyncTask<String, Void, String>{
@@ -111,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
                 bairro = jsonObject.getString("bairro");
                 localidade = jsonObject.getString("localidade");
                 uf = jsonObject.getString("uf");
-
+                //precisa formatar a string e printar apenas
 
 
                 /*
