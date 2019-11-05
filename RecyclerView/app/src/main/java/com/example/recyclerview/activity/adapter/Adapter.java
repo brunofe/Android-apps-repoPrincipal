@@ -9,30 +9,40 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.recyclerview.R;
+import com.example.recyclerview.activity.model.Filme;
+
+import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
+    private List<Filme> listaFilmes;
+
+    public Adapter(List<Filme> lista) {
+        this.listaFilmes = lista;
+    }
 
     @NonNull
     @Override
+    /** ele é chamado para que possa criar as visualizações **/
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View itemLista = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.adapter_lista, parent, false);
-
         return new MyViewHolder(itemLista);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.titulo.setText("Titulo de teste");
-        holder.genero.setText("Comédia");
-        holder.ano.setText("2017");
+
+        Filme filme = listaFilmes.get(position);
+        holder.titulo.setText( filme.getTituloFilme() );
+        holder.genero.setText( filme.getGenero() );
+        holder.ano.setText( filme.getAno() );
     }
 
     @Override
     public int getItemCount() {
-        return 5;
+        return listaFilmes.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
